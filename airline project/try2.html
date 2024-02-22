@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        width: 100%;
+    }
+    .main p::after{
+        content: " ";
+        background-color: red;
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+    } */
+    .main {
+    width: 100%;
+}
+
+.main p:last-child::after {
+    content: " ";
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    /* display: inline-block; Ensures the ::after element takes up space */
+    margin-left: 5px; /* Adjust the spacing between the last word and the square */
+}
+dialog{
+    visibility: visible;
+    border: 2px solid black;
+}
+
+</style>
+<body>
+    <div class="main">
+        <h1>heading 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, nisi.</p>
+    </div>
+
+
+    <dialog>
+        <form action="">
+            <label for="">hello</label> <br>
+            <input type="text">
+            <label for=""> bye</label>  
+            <input type="text">
+        </form>
+    </dlog>
+</body>
+</html>
